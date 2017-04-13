@@ -1,0 +1,50 @@
+<script type="text/html" id="srtm-params">
+    <div class="srtm-ui">
+        <span class="ui-title"><strong>Построение профиля высот</strong></span>
+        <hr>
+        <label class="label-first ui-label">Высота начальной точки</label>
+        <input class="input-first ui-input" type="text" value="{{h1}}">
+        <br>
+        <label class="label-last ui-label">Высота конечной точки</label>
+        <input class="input-last ui-input" type="text" value="{{h2}}">
+        <br>
+        <label>Количество точек (5..100): </label>
+        <label class="slider-value">5</label>
+        <input class="slider" type="range" min="5" max="100" value="{{numberPoints}}">
+        <br>
+        <div class="div-coord-check check-cont">
+            <input class="coord-input" type="checkbox" value="false">
+            <label class="coord-label">Ввод координат</label>
+            <label class="input-coord-label">Начальная точка</label>
+            <input class="input-coord-checked first-latlng" type="text" value="{{p1}}">
+            <label class="input-coord-label">Конечная точка</label>
+            <input class="input-coord-checked last-latlng" type="text" value="{{p2}}">
+            <button class="button-chart-by-coord">Построить профиль</button>
+        </div>
+        <br>
+        <div class="div-earth-check check-cont">
+            <input class="curve-earth" type="checkbox" value="{{enableCurve}}">
+            <label class="curve-label">Учитывать кривизну Земли</label>
+            <label class="const-earth-label">Коэффициент эффективного радиуса Земли</label>
+            <input class="const-earth-input" type="text" value="{{refraction}}">
+        </div>
+        <br>
+        <div class="div-zone-check check-cont">
+            <input class="frenel-zone" type="checkbox" value="{{enableFrenel}}">
+            <label class="frenel-label">Зона Френеля</label>
+            <label class="label-frenel-hz">Частота, ГГц</label>
+            <input class="input-frelen-hz" type="text" value="{{frenelGHz}}">
+            <label class="label-frenel-proc">%</label>
+            <input class="input-frenel-proc" type="text" value="{{frenelPer}}">
+        </div>
+        <br>
+        <button class="chart-button ui-button btn btn-default" type="button" aria-label="Left Align">
+            <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+            <span>Построить профиль высот</span>
+        </button>
+        <button class="draw-button ui-button btn btn-default" type="button" aria-label="Left Align">
+            <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+            <span>Нарисовать линию</span>
+        </button>
+    </div>
+</script>

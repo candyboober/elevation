@@ -1,0 +1,135 @@
+.srtm-ui {
+    width: 400px;
+    background-color: white;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #DCDCDC;
+    padding: 4px 4px 4px 4px;
+    * {
+        margin: 0px 0px 5px 5px;
+    }
+    input[type*='text'] {
+        outline: none;
+    }
+    .input-last {
+        margin-left: 14px;
+    }
+    .check-cont {
+        border: 1px solid #DCDCDC;
+        border-radius: 1px;
+        display: flex;
+        flex-wrap: wrap;
+        div {
+            display: flex;
+            .input-frenel-proc {
+                margin-left: 70px;
+            }
+            .const-earth-input {
+                width: 60px;
+            }
+        }
+        input[type*='checkbox'] {
+            margin-left: 5px;
+            margin-bottom: 8px;
+            margin-top: 2px;
+        }
+        input[type*='checkbox'] + span {
+            margin-top: 3px;
+        }
+        :nth-child(n+4) {
+            display: none;
+        }
+    }
+    .slider {
+        width: 378px;
+        cursor: pointer;
+    }
+    .ui-title {
+        font-size: 1.1em;
+        height: 20px;
+        padding: 3px 2px;
+        display: flex;
+    }
+    .title-label {
+        margin: -5px -8px;
+    }
+    .srtm-close {
+        margin: -5px 0px 0px 161px;
+        opacity: .7;
+        cursor: pointer;
+    }
+    .srtm-close:hover {
+        opacity: 1;
+    }
+    .glyphicon-stats {
+        display: inherit;
+        height: auto;
+        width: auto;
+    }
+    .button-chart-by-coord {
+        height: 25px;
+        width: 204px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+    }
+    .ui-input {
+        width: 100px;
+    }
+    .draw-button {
+        width: 263px;
+        margin-top: 10px;
+        i {
+            float: left;
+            margin-top: 5px;
+        }
+    }
+}
+
+.srtm-chart {
+    height: 400px;
+    width: 520px;
+    display: block;
+    position: relative;
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+    float: right;
+    padding: 5px;
+    top: 10px;
+    right: 230px;
+    z-index: 10;
+    background-color: white;
+
+    top: 55px;
+    right: 60px;
+}
+
+.srtm-info {
+    height: auto;
+    display: none;
+    span {
+        display: block;
+    }
+    div hr {
+        margin-top: 10px;
+    }
+}
+
+.srtm-marker {
+    width: 35px;
+    height: 38px;
+    background-image: url('../img/map-marker-blue.png');
+    background-color: none;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: -18px!important;
+    margin-top: -33px!important;
+}
+
+.srtm-c3 {
+    top: 55px;
+    right: 60px;
+}
+
+.pile__item__content {
+    overflow-y: auto;
+    overflow-x: hidden;
+}

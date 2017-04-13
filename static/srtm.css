@@ -1,0 +1,130 @@
+.srtm-ui {
+  width: 400px;
+  background-color: white;
+  padding: 5px 5px 5px 5px;
+  border: 1px solid #DCDCDC;
+  padding: 4px 4px 4px 4px;
+}
+.srtm-ui * {
+  margin: 0px 0px 5px 5px;
+}
+.srtm-ui input[type*='text'] {
+  outline: none;
+}
+.srtm-ui .input-last {
+  margin-left: 14px;
+}
+.srtm-ui .check-cont {
+  border: 1px solid #DCDCDC;
+  border-radius: 1px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.srtm-ui .check-cont div {
+  display: flex;
+}
+.srtm-ui .check-cont div .input-frenel-proc {
+  margin-left: 70px;
+}
+.srtm-ui .check-cont div .const-earth-input {
+  width: 60px;
+}
+.srtm-ui .check-cont input[type*='checkbox'] {
+  margin-left: 5px;
+  margin-bottom: 8px;
+  margin-top: 2px;
+}
+.srtm-ui .check-cont input[type*='checkbox'] + span {
+  margin-top: 3px;
+}
+.srtm-ui .check-cont :nth-child(n+4) {
+  display: none;
+}
+.srtm-ui .slider {
+  width: 378px;
+  cursor: pointer;
+}
+.srtm-ui .ui-title {
+  font-size: 1.1em;
+  height: 20px;
+  padding: 3px 2px;
+  display: flex;
+}
+.srtm-ui .title-label {
+  margin: -5px -8px;
+}
+.srtm-ui .srtm-close {
+  margin: -5px 0px 0px 161px;
+  opacity: .7;
+  cursor: pointer;
+}
+.srtm-ui .srtm-close:hover {
+  opacity: 1;
+}
+.srtm-ui .glyphicon-stats {
+  display: inherit;
+  height: auto;
+  width: auto;
+}
+.srtm-ui .button-chart-by-coord {
+  height: 25px;
+  width: 204px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+.srtm-ui .ui-input {
+  width: 100px;
+}
+.srtm-ui .draw-button {
+  width: 263px;
+  margin-top: 10px;
+}
+.srtm-ui .draw-button i {
+  float: left;
+  margin-top: 5px;
+}
+.srtm-chart {
+  height: 400px;
+  width: 520px;
+  display: block;
+  position: relative;
+  border: 1px solid gainsboro;
+  border-radius: 8px;
+  float: right;
+  padding: 5px;
+  top: 10px;
+  right: 230px;
+  z-index: 10;
+  background-color: white;
+
+  top: 55px;
+  right: 60px;
+}
+.srtm-info {
+  height: auto;
+  display: none;
+}
+.srtm-info span {
+  display: block;
+}
+.srtm-info div hr {
+  margin-top: 10px;
+}
+.srtm-marker {
+  width: 35px;
+  height: 38px;
+  background-image: url('../img/map-marker-blue.png');
+  background-color: none;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-left: -18px !important;
+  margin-top: -33px !important;
+}
+.srtm-c3 {
+  top: 55px;
+  right: 60px;
+}
+.pile__item__content {
+  overflow-y: auto;
+  overflow-x: hidden;
+}

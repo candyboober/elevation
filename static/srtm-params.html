@@ -1,0 +1,67 @@
+<script type="text/html" id="srtm-params">
+    <div class="srtm-ui">
+        <div class="ui-title">
+            <span class="title-label"><strong>Построение профиля высот</strong></span>
+            <i class="title-block__close icon-times icomoon-size-lg srtm-close"></i>
+        </div>
+        <hr>
+        <label class="label-first ui-label">Высота начальной точки</label>
+        <input class="input-first ui-input" type="text" value="{{h1}}">
+        <br>
+        <label class="label-last ui-label">Высота конечной точки</label>
+        <input class="input-last ui-input" type="text" value="{{h2}}">
+        <br>
+        <label>Количество точек (5..100): </label>
+        <label class="slider-value">{{numberPoints}}</label>
+        <input class="slider" type="range" min="5" max="100" value="{{numberPoints}}">
+        <br>
+        <div class="div-coord-check check-cont">
+            <input class="coord-input" type="checkbox" value="false">
+            <span></span>
+            <label class="coord-label">Ввод координат</label>
+            <div>
+                <label class="input-coord-label">Начальная точка</label>
+                <input class="input-coord-checked first-latlng" type="text" value="{{firstLatlng}}">
+            </div>
+            <div>
+                <label class="input-coord-label">Конечная точка</label>
+                <input class="input-coord-checked last-latlng" type="text" value="{{lastLatlng}}">
+            </div>
+        </div>
+        <br>
+        <div class="div-earth-check check-cont">
+            <input class="curve-earth" type="checkbox" value="{{enableCurve}}">
+            <span></span>
+            <label class="curve-label">Учитывать кривизну Земли</label>
+            <div>
+                <label class="const-earth-label">Коэффициент эффективного радиуса Земли</label>
+                <input class="const-earth-input" type="text" value="{{refraction}}">
+            </div>
+        </div>
+        <br>
+        <div class="div-zone-check check-cont">
+            <input class="frenel-zone" type="checkbox" value="{{enableFrenel}}">
+            <span></span>
+            <label class="frenel-label">Зона Френеля</label>
+            <div>
+                <label class="label-frenel-hz">Частота, ГГц</label>
+                <input class="input-frelen-hz" type="text" value="{{frenelGHz}}">
+            </div>
+            <div>
+                <label class="label-frenel-proc">%</label>
+                <input class="input-frenel-proc" type="text" value="{{frenelPer}}">
+            </div>
+        </div>
+        <br>
+        <button class="draw-button ui-button btn btn-default" type="button" aria-label="Left Align">
+            <i class="fa fa-line-chart"></i>
+            <span>Нарисовать линию</span>
+        </button>
+        <button class="chart-button ui-button btn btn-default" type="button" aria-label="Left Align" disabled>
+            <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+            <span>Построить профиль высот</span>
+        </button>        
+        <div class="srtm-info">
+        </div>
+    </div>
+</script>

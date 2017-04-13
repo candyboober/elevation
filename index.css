@@ -1,0 +1,18 @@
+html,
+body,
+#map-root,
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+#chart {
+    height: 33%;
+    width: 33%;
+    position: absolute;
+    z-index: 20;
+}
+
+.zc-ref {
+  display: none;
+}

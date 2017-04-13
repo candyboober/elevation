@@ -1,0 +1,31 @@
+{
+  "name": "diplom))0)",
+  "version": "1.0.0",
+  "description": "Django-приложение для построения профиля высот по координатам некоторой прямой.\r Имеется возможность расчета 1-ой зоны Френеля,\r визуальное сравнение 100% и 60% области для обнаружение типа покрытия.\r Также имеется возможность расчета основных потерь и напряженности поля в точке приемника при заданной мощности источника.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.4.0",
+    "c3": "^0.4.10",
+    "d3": "^3.5.0",
+    "font-awesome": "^4.7.0",
+    "leaflet": "^0.7.3",
+    "leaflet-draw": "^0.2.4",
+    "mapbox-gl": "^0.34.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "whatwg-fetch": "^2.0.3",
+    "zingchart": "^2.6.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2016": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "webpack": "^2.3.3"
+  }
+}
