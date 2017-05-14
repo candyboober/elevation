@@ -16,3 +16,17 @@ body,
 .zc-ref {
   display: none;
 }
+
+.ui {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px 10px 10px;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 160px;
+}

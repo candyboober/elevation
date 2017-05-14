@@ -55,7 +55,6 @@ def point_set_request(url):
         return point_set_request(url)
     return data
 
-# 10 000m -> 10011m
 def find_point(point, angle, radius):
     radius = radius / 6371
     angle = math.radians(angle)
